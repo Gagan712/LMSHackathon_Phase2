@@ -1,0 +1,8 @@
+[INFO ]2023-09-09 12:10:18.679 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-09 12:10:18.690 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-09 12:10:21.512 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-09 12:10:21.686 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-09 12:15:00.343 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-09 12:15:00.351 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-09 12:15:02.542 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-09 12:15:04.160 [main]LoggerLoad-Closing Driver

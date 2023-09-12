@@ -366,10 +366,10 @@ public class ManageProgramepage {
 
 				public void clickEditButton() {
 					LoggerLoad.info("Click Edit button");
-					if (Flag == 2)
+					
 						editbtn.click();
-					else
-						LoggerLoad.info("Denied Access");
+					
+						
 
 				}
 

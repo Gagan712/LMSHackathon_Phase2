@@ -1,7 +1,7 @@
 package pages;
 
 import static org.testng.Assert.assertEquals;
-
+import utilities.*;
 import java.sql.DriverManager;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -17,14 +17,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import baseClass.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import utilities.PaginationUtility;
-import utilities.AscDscOrderUtility;
-import utilities.LoggerLoad;
-import utilities.SearchUtility;
 
 public class UserPage {
 
@@ -32,9 +29,10 @@ public class UserPage {
 	PaginationUtility Pgu = new PaginationUtility();
 	SearchUtility SU = new SearchUtility();
 	AscDscOrderUtility AsDs = new AscDscOrderUtility();
-	String cellXPathProgramName = "//*[@id='table']/tbody/tr/td[1]";
-	String cellXPathProgramDesc = "//*[@id='table']/tbody/tr/td[2]";
-	String cellXPathProgramStatus = "//*[@id='table']/tbody/tr/td[3]";
+	String cellXPathID = "//*[@id='table']/tbody/tr/td[1]";
+	String cellXPathUserName = "//*[@id='table']/tbody/tr/td[2]";
+	String cellXPathLocation= "//*[@id='table']/tbody/tr/td[3]";
+	String cellXPathPhoneNumber = "//*[@id='table']/tbody/tr/td[4]";
 	static int Flag;
 
 	@FindBy(linkText = "User")
@@ -60,17 +58,43 @@ public class UserPage {
 	@FindBy(linkText = "A New User")
 	WebElement userbtn;
 
-	// Program Detail Window
+	
+
+	// UserDetail Window
 	@FindBy(id = "programpopup")
 	WebElement programpop;
-	@FindBy(id = "programdetail name")
-	WebElement programName;
-	@FindBy(id = "program description")
-	WebElement programDescription;
-	@FindBy(id = "prgmStatusActive")
-	WebElement radioActive;
-	@FindBy(id = "prgmStatusInActive")
-	WebElement radioInActive;
+	@FindBy(id = "first name")
+	WebElement FirstName;
+	@FindBy(id = "Middle Name")
+	WebElement   MiddleName;
+	
+	@FindBy(id = "Last Name")
+	WebElement LastName;
+	@FindBy(id = "Location")
+	WebElement Location;
+	@FindBy(id = "phone")
+	WebElement phone;
+	@FindBy(id = "linkedin Url")
+	WebElement linkedinUrl;
+	@FindBy(id = "User Role")
+	WebElement UserRole;
+	@FindBy(id = "Role Status")
+	WebElement RoleStatus;
+	@FindBy(id = "Visa Status")
+	WebElement VisaStatus;
+	@FindBy(id = "email")
+	WebElement email;
+	@FindBy(id = "Undergraduate")
+	WebElement Undergraduate;
+	
+	@FindBy(id = "postgraduate")
+	WebElement postgraduate;
+	@FindBy(id = "time zone")
+	WebElement timezone;
+	@FindBy(id = "user comments")
+	WebElement usercomments;
+	
+	
 	@FindBy(linkText = "Save button")
 	WebElement savebtn;
 	@FindBy(linkText = "cancel button")
@@ -87,9 +111,12 @@ public class UserPage {
 	WebElement editbtn;
 	@FindBy(id = "updatedMsg")
 	WebElement updatedMsg;
-	@FindBy(id = "right delete button")
-	WebElement rightdeletebtn;
-
+	@FindBy(id = "deletebutton1")
+	WebElement deleteButton1;
+	@FindBy(id = "deletebutton2")
+	WebElement deleteButton2;
+	
+	
 	// multiple delete
 
 	@FindBy(id = "Main delete button")
@@ -98,10 +125,10 @@ public class UserPage {
 	WebElement checkBox1;
 	@FindBy(id = "checkbox2")
 	WebElement checkBox2;
-	@FindBy(id = "prgName1")
-	WebElement prgName1;
-	@FindBy(id = "prgName2")
-	WebElement prgName2;
+	@FindBy(id = "UserName1")
+	WebElement userName1;
+	@FindBy(id = "UserName2")
+	WebElement userName2;
 
 	// check box
 	@FindBy(id = "firstCheckbox")
@@ -151,6 +178,11 @@ public class UserPage {
 	// no of rows
 	@FindBy(xpath = "//*[@id='table']/tbody/tr")
 	List<WebElement> programtablerow;
+	
+	
+	//Alert msg
+	@FindBy(xpath="//*[@id='alert-msg")
+	WebElement alertmsg;
 
 	public void initializedriver() {
 		WebDriverManager.chromedriver().setup();
@@ -241,7 +273,7 @@ public class UserPage {
 
 	// search
 	public void verifySearchText(String searchTxt) {
-		LoggerLoad.info("Admin/User/Staff see the Search Text box has text as \"Search\"");
+		LoggerLoad.info("Admin see the Search Text box has text as \"Search\"");
 		assertEquals(searchText.getText(), searchTxt);
 
 	}
@@ -251,21 +283,21 @@ public class UserPage {
 		new Actions(driver).sendKeys(searchTxtBox, searchString).sendKeys(searchTxtBox, Keys.ENTER).perform();
 	}
 
-	public void verifySearchResultProgramName(String searchString) throws Exception {
+	public void verifySearchResultUserName(String searchString) throws Exception {
 		LoggerLoad.info("Entries for the searched are shown" + searchString);
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
+		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
 		Assert.assertTrue("Searched Result are not Found", SU.verifySearch(data, searchString));
 	}
 
-	public void verifySearchResultProgramDesc(String searchString) throws Exception {
+	public void verifySearchResultUserID(String searchString) throws Exception {
 		LoggerLoad.info("Entries for the searched are shown" + searchString);
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
+		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathID);
 		Assert.assertTrue("Searched Result are not Found", SU.verifySearch(data, searchString));
 	}
 
-	public void verifySearchResultProgramStatus(String searchString) throws Exception {
+	public void verifySearchResultLocation(String searchString) throws Exception {
 		LoggerLoad.info("Entries for the searched are shown" + searchString);
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
+		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathLocation);
 		Assert.assertTrue("Searched Result are not Found", SU.verifySearch(data, searchString));
 	}
 
@@ -285,45 +317,45 @@ public class UserPage {
 		sortBtn_ProStatus.click();
 	}
 
-	// Ascending order
-	public void verifyASCOrder_Name() {
-		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
-		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
-	}
+//	// Ascending order
+//	public void verifyASCOrder_Name() {
+//		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
+//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
+//		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
+//	}
+//
+//	public void verifyASCOrder_Desc() {
+//		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
+//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
+//		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
+//
+//	}
 
-	public void verifyASCOrder_Desc() {
-		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
-		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
+//	public void verifyASCOrder_Status() {
+//		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
+//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
+//		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
+//
+//	}
+//
+//	// descending order
+//	public void verifyDESCOrder_Name() {
+//		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
+//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
+//		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
+//	}
 
-	}
-
-	public void verifyASCOrder_Status() {
-		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
-		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
-
-	}
-
-	// descending order
-	public void verifyDESCOrder_Name() {
-		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
-		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
-	}
-
-	public void verifyDESCOrder_Desc() {
-		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
-		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
-	}
-
-	public void verifyDESCOrder_Status() {
-		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
-		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
-	}
+//	public void verifyDESCOrder_Desc() {
+//		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
+//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
+//		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
+//	}
+//
+//	public void verifyDESCOrder_Status() {
+//		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
+//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
+//		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
+//	}
 
 // total no of rows 
 
@@ -332,13 +364,17 @@ public class UserPage {
 		LoggerLoad.info("No of rows in Program Table" + rows_count);
 	}
 
-	// add a new Program
-	public void clickprogrambtn() {
-		LoggerLoad.info("Clicks on a new program button");
-		if (Flag == 2)
+	// add a new User
+	public void clickNewUserbtn() {
+		LoggerLoad.info("Clicks on a new user button");
 			userbtn.click();
-		else
-			LoggerLoad.info("Denied Access");
+	}
+	
+	public String newUserOrNewassignText(String text)
+	{
+		
+		String value=driver.findElement(By.xpath("//button[contains(text()"+text+")]")).getAttribute("value");
+		return value;
 	}
 
 	public void verifyPopUPWindow(String popuptext) {
@@ -346,28 +382,86 @@ public class UserPage {
 		assertEquals(poptxt, popuptext);
 	}
 
-	public void verifyNewProgramWindow() {
-		LoggerLoad.info("Admin is on A New Program Window");
+	public void verifyNewUserWindow() {
+		LoggerLoad.info("Admin is on A New User Window");
 		driver.switchTo().activeElement();
 	}
 
-	public void setProgramName(String Name) {
-		LoggerLoad.info("Enter Program Name");
-		programName.click();
-		programName.clear();
-		programName.sendKeys(Name);
+	
+	public void verifySearchUserNameResultFound(String searchstring) throws Exception {
+		//Loggerload.info("Entries for the searched are shown" + searchstring);
+		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
+		Assert.assertFalse("Searched Result are Found", SU.verifySearch(data, searchstring));
+
 	}
 
-	public void setProgramDescription(String Description) {
-		LoggerLoad.info("Enter description for program ");
-		programDescription.click();
-		programDescription.clear();
-		programDescription.sendKeys(Description);
+	
+	
+	
+	public void setUserWindowDetails(String string, String string2, String string3, String string4, String string5, String string6, String string7, String string8, String string9, String string10, String string11, String string12, String string13, String string14)
+	{  FirstName.clear();
+	   FirstName.sendKeys(string);
+	   MiddleName.clear();
+	   MiddleName.sendKeys(string2);
+	   LastName.clear();
+	   LastName.sendKeys(string3);
+	   Location.clear();
+	   Location.sendKeys(string4);
+	   phone.clear();
+	   phone.sendKeys(string5);
+	   linkedinUrl.clear();
+	   linkedinUrl.sendKeys(string6);
+	   Select dropdown=new Select(UserRole);
+	   dropdown.selectByVisibleText(string7);
+	   Select dropdown2=new Select(RoleStatus);
+	   dropdown2.selectByVisibleText(string8);
+	   Select dropdown3=new Select(VisaStatus);
+	   dropdown3.selectByVisibleText(string9);
+	   email.clear();
+	   email.sendKeys(string10);
+	   Undergraduate.clear();
+	   Undergraduate.sendKeys(string11);
+	   postgraduate.clear();
+	   postgraduate.sendKeys(string12);
+	   timezone.clear();
+	   timezone.sendKeys(string13);
+	   usercomments.clear();
+	   usercomments.sendKeys(string14);
+	   
 	}
-
-	public void setstatusbutton() {
-		radioActive.click();
+	
+	public String verifytextboxtype(String string)
+	{
+		String type=driver.findElement(By.id(string)).getAttribute("type");
+		return type;
 	}
+	
+	
+	public String verifydropdownype(String string)
+	{
+		String type=driver.findElement(By.id(string)).getAttribute("type");
+		return type;
+	}
+	
+	
+	
+//	public void setProgramName(String Name) {
+//		LoggerLoad.info("Enter Program Name");
+//		programName.click();
+//		programName.clear();
+//		programName.sendKeys(Name);
+//	}
+//
+//	public void setProgramDescription(String Description) {
+//		LoggerLoad.info("Enter description for program ");
+//		programDescription.click();
+//		programDescription.clear();
+//		programDescription.sendKeys(Description);
+//	}
+//
+//	public void setstatusbutton() {
+//		radioActive.click();
+//	}
 
 	public void clicksaveButton() {
 		LoggerLoad.info("Click save button");
@@ -389,11 +483,14 @@ public class UserPage {
 		assertEquals(driver.getCurrentUrl(), "Manage Program page URL");
 	}
 
-	public void verifyMsg(String message) {
+	public String verifyMsg() {
 		WebElement errorMessage = new WebDriverWait(driver, Duration.ofSeconds(30))
 				.until(ExpectedConditions.visibilityOfElementLocated(errormsg));
-		LoggerLoad.error(errorMessage.getText());
-		assertEquals(errorMessage.getText(), message);
+		//LoggerLoad.error(errorMessage.getText());
+		//assertEquals(errorMessage.getText(), message);
+		String msg=errorMessage.getText();
+		return msg;
+		
 
 	}
 
@@ -408,12 +505,29 @@ public class UserPage {
 
 	public void clickEditButton() {
 		LoggerLoad.info("Click Edit button");
-		if (Flag == 2)
+		
 			editbtn.click();
-		else
-			LoggerLoad.info("Denied Access");
+		
+			
 
 	}
+	
+	public boolean verifyEditButton() {
+		LoggerLoad.info("verify Edit button");
+		
+			if(editbtn.isDisplayed())
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		
+			
+
+	}
+	
 
 	public void verifyUpdatedMsg(String msg) {
 		LoggerLoad.info("Admin verify successful message for update");
@@ -421,12 +535,18 @@ public class UserPage {
 	}
 
 	// delete functionality
-	public void clickRightDeleteButton() {
-		LoggerLoad.info("Click Delete button on right side");
-		if (Flag == 2)
-			rightdeletebtn.click();
-		else
-			LoggerLoad.info("Denied Access");
+	public void clickOnfirstDeleteButton() {
+		LoggerLoad.info("Click first Delete button on right side");
+		
+			deleteButton1.click();
+	
+
+	}
+	public void clickOnSecondDeleteButton() {
+		LoggerLoad.info("Click Second Delete button on right side");
+		
+			deleteButton2.click();
+		
 
 	}
 
@@ -448,23 +568,73 @@ public class UserPage {
 
 	public void isPrgmNameDeleted(String searchstring) throws Exception {
 		LoggerLoad.info("Admin check if program name is deleted");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
+		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
 		Assert.assertTrue("Search result not found", SU.verifySearch(data, searchstring));
 
 	}
 
 	// multiple delete Functionality
 	public void clickmaindelete() {
-		if (Flag == 2)
+		
 			maindeleteBtn.click();
-		else
-			LoggerLoad.info("Denied Access");
-
+		
 	}
 
 	public void verifyMainDeleteBtnDisabled() {
 		LoggerLoad.info("Admin verify that delete button is disabled");
 		Assert.assertFalse("Delete Button is Enabled", maindeleteBtn.isEnabled());
+	}
+	
+	public boolean verifyEnableMainBtn() {
+		if(maindeleteBtn.isEnabled())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	
+	public boolean verifySearchtextbox()
+	{
+		if(searchTxtBox.isDisplayed())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	public void getAlertmsg() {
+		alertmsg.getText();
+	}
+	
+	public boolean verifyfirstDeletBtn() {
+		if(deleteButton1.isEnabled())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	
+	public boolean verifySecondDeletBtn() {
+		if(deleteButton2.isEnabled())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
 	}
 
 	public void selectMultipleCheckboxes() {
@@ -491,20 +661,27 @@ public class UserPage {
 	public void verifyPrgmNameExist() throws Exception {
 		LoggerLoad.info("Admin can see Program Names not deleted");
 		LoggerLoad.info("check if program name is deleted");
-		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
-		Assert.assertTrue("Search result not found for" + prgName1.getText(),
-				SU.verifySearch(data, prgName1.getText()));
-		Assert.assertTrue("Search result not found for" + prgName2.getText(),
-				SU.verifySearch(data, prgName2.getText()));
+		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
+		Assert.assertTrue("Search result not found for" + userName1.getText(),
+				SU.verifySearch(data, userName1.getText()));
+		Assert.assertTrue("Search result not found for" + userName2.getText(),
+				SU.verifySearch(data, userName2.getText()));
 
 	}
+	
+	
+	
+	
+
 
 	// checkbox functionality
 	public void selectFirstCheckbox() {
-		LoggerLoad.info("Admin verify that delete button is enabled");
+		LoggerLoad.info("Admin verify that first check boxes is selected");
 		firstCheckbox.click();
 
 	}
+	
+	
 
 	public void verifyAllCheckbox() {
 		LoggerLoad.info("Admin verify all check boxes are checked");
@@ -514,16 +691,17 @@ public class UserPage {
 		}
 	}
 
-	public void validadmin(String Admin) {
-		if (Admin.equalsIgnoreCase("admin")) {
-			Flag = 2;
+	public boolean verifyPagination() {
+		if(nextPgBtn.isEnabled()&&prevPgBtn.isEnabled()&&firstPgBtn.isEnabled()&&lastPgBtn.isEnabled())
+		{
+			return true;
+			
+		}
+		else
+		{
+			return false;
 		}
 	}
-
-	public void validUserStaff(String User, String Staff) {
-		if (User.equalsIgnoreCase("admin") || (Staff.equalsIgnoreCase("staff"))) {
-			Flag = 1;
-		}
-	}
+	
 
 }

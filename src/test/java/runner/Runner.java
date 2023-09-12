@@ -16,7 +16,7 @@ monochrome = false, // console output
 
 //tags = "@admin",// tags from feature file 
 
-features = { "src/test/resources/Features"}, // location of feature files 
+features = { "src/test/resources/Features/ClassPart2.feature"}, // location of feature files 
 
 glue = {"stepDefinition","hooks"}) // location of step definition files 
 

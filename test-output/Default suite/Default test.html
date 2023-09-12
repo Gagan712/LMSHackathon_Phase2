@@ -1,0 +1,1913 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/131/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 12 08:28:04 CDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17558 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class missing staff id", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace270157340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace270157340'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Batch Id", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace201245433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201245433'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace775093282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace775093282'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1402606475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1402606475'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class with invalid data in optional fields", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace77029509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77029509'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace191351920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace191351920'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing staff id", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2050715938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050715938'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate left arrow in data picker to navigate to previous month", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace592248663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace592248663'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class with valid data in mandatory fields", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace434167806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace434167806'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering existing class topic", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1235678342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1235678342'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace918145945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918145945'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1996385500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996385500'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering non-existing staff id", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace41810270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace41810270'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1112560756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112560756'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace221145867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace221145867'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1457352442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1457352442'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel button function in Edit class details popup window with values in field", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace815590838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace815590838'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace628599133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628599133'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1725825266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725825266'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace844264574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace844264574'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace532613259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace532613259'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1662824745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1662824745'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify save button is present", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1896000574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1896000574'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace510207317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510207317'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Batch Id", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1706741895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1706741895'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering existing class date", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace722378544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722378544'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace154146418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace154146418'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace855206842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855206842'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering non-existing class no", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1715413882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1715413882'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate all batch id is reflecting in the dropdown", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1194398327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1194398327'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>1</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Batch Id", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace268258490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace268258490'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel button function in Edit class details popup window", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2038585029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2038585029'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function with non-existing batch id", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1775046789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1775046789'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify reject enabled in alert", "Delete Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_manage_class_page(DeleteClass_SD.java:26)
+	at ?.Admin is in Manage class page(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace535687332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace535687332'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_manage_class_page(DeleteClass_SD.java:26)
+	at ?.Admin is in Manage class page(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:15)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel button function in class details popup window", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1917860633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917860633'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1404150776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1404150776'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering non-existing class topic", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace197535883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace197535883'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace645717550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645717550'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace225507106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225507106'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2067586671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2067586671'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace70666339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70666339'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class with valid data in all fields", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace864511710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace864511710'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel button function in class details popup window with values in field", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1725885575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725885575'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace491762195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace491762195'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1832101486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1832101486'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate current date is highlighted in the date picker", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1271570837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1271570837'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing staff id", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1931977799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1931977799'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace824691524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace824691524'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace449541293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace449541293'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace792210014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace792210014'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1788036341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788036341'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Class Date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2111669429", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2111669429'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate date picker", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1937209374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1937209374'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Batch Id", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1729045606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729045606'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace263495647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace263495647'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace236002428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace236002428'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Class Date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1711154833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1711154833'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class with invalid data in mandatory fields", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace645323781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645323781'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function with existing batch id", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1720067573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720067573'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify drop down list for Batch Id  in class details popup window", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1232819726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232819726'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class missing No of Class", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1110618954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1110618954'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1925044167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1925044167'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1664093259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664093259'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Batch Id", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1051890381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051890381'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1255024717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1255024717'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2107853606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107853606'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1005928818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1005928818'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace737852016", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737852016'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1993812827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1993812827'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Class Date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1409848452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409848452'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify calendar icon in class date  in class details popup window", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1999415998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1999415998'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace842588842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace842588842'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing staff id", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1751751420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1751751420'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering existing staff id", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace391575500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391575500'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering existing class no", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1090160486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1090160486'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering invalid class date", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1349168118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1349168118'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function by entering invalid class date", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace858846125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858846125'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify close button   in class details popup window", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace224113092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224113092'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace723310524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace723310524'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing staff id", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace636575568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636575568'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace124702413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124702413'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2020602315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2020602315'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace979387846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace979387846'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace564766469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564766469'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1126074033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1126074033'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1742885458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1742885458'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace95553286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95553286'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update  class missing No of Class", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1661178041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661178041'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace951317000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951317000'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update  class missing No of Class", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1913257909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1913257909'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Class Date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1229365242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1229365242'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class missing Batch Id", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1964697764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1964697764'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2044211046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2044211046'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel button function in Edit class details popup window with values in field", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1955226954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1955226954'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1157484092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157484092'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace769195805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace769195805'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate right arrow in data picker to navigate to next month", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace379972461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace379972461'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class with valid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2087075503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2087075503'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Delete class alert", "Delete Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_manage_class_page(DeleteClass_SD.java:26)
+	at ?.Admin is in Manage class page(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1268124507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1268124507'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_manage_class_page(DeleteClass_SD.java:26)
+	at ?.Admin is in Manage class page(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update  class missing No of Class", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1857852787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857852787'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Edit class popup window", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace99219259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace99219259'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing staff id", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1470959992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470959992'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with invalid data in mandatory fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1597425891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597425891'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Batch Id", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1724736027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1724736027'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1016881733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016881733'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace372261610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace372261610'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update  class missing No of Class", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1821228886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821228886'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Search box function with existing batch id", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1975171943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1975171943'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace579590740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace579590740'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate date picker should be correct format", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace278891646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace278891646'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify input fields in class details pop up window", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace763755364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace763755364'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify drop down list for Staff Id  in class details popup window", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace597623166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597623166'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update  class missing No of Class", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace561772958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace561772958'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to add new class missing Class Date", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace257745083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257745083'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing staff id", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace404994500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace404994500'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Class Date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace918738473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918738473'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update class with valid data  in all fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace188647125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace188647125'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify cancel button is present", "Class detail pop up window verification"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace766681183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace766681183'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.Classdetailspopup_SD.admin_is_on_manage_class_page_after_clicking_class_button(Classdetailspopup_SD.java:24)
+	at ?.Admin is on ManageClass page after clicking class button(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/Classdetailpopupwindow.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate reject in alert", "Delete Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_delete_alert(DeleteClass_SD.java:55)
+	at ?.Admin is in delete alert(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1829287142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1829287142'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_delete_alert(DeleteClass_SD.java:55)
+	at ?.Admin is in delete alert(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:26)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update  class missing No of Class", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace803685654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace803685654'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate accept in alert", "Delete Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_delete_alert(DeleteClass_SD.java:55)
+	at ?.Admin is in delete alert(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace786728464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace786728464'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_delete_alert(DeleteClass_SD.java:55)
+	at ?.Admin is in delete alert(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:20)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2135359921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2135359921'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1519611492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1519611492'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to update class missing Class Date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace224878495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224878495'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate cancel button function in Edit class details popup window", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace312629339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace312629339'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to add new class passing past date", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1589640004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589640004'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  accept enabled in alert", "Delete Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_manage_class_page(DeleteClass_SD.java:26)
+	at ?.Admin is in Manage class page(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2077845538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077845538'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.DeleteClass_SD.admin_is_in_manage_class_page(DeleteClass_SD.java:26)
+	at ?.Admin is in Manage class page(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/DeleteClass.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace992302041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace992302041'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate admin able to  update  class with invalid data  in optional fields", "Edit Class Validation"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1201360998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1201360998'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/EditClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate selected date is highlighted in the date picker", "Add New Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace307036850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307036850'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.AddNewClass_SD.admin_is_in_class_detail_popup_window(AddNewClass_SD.java:27)
+	at ?.Admin is in class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/AddNewClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+<tr>
+<td title='runner.Runner$AllureReport.runScenario()'><b>runScenario</b><br>Test class: runner.Runner$AllureReport<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  admin able to update class passing past date", "Manage Class"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace693434027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace693434027'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at pages.ClassPage.homepage(ClassPage.java:98)
+	at stepDefinition.EditClass_SD.admin_is_in_edit_class_detail_popup_window(EditClass_SD.java:24)
+	at ?.Admin is in  Edit class detail popup window(file:///C:/Users/amitf/eclipse-workspace/LMSHackathon_Phase2/src/test/resources/Features/ManageClass.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>runner.Runner$AllureReport@7ce026d3</td></tr>
+</table><p>
+</body>
+</html>

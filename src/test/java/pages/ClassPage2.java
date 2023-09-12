@@ -25,7 +25,7 @@ import utilities.PaginationUtility;
 import utilities.SearchUtility;
 import baseClass.BaseClass;
 
-public class ClassPage {
+public class ClassPage2 {
 
 	WebDriver driver = Hooks.driver;
 	// Excelreader read;
@@ -134,7 +134,7 @@ public class ClassPage {
 	@FindBy(id = "PgText")
 	WebElement pgText;
 
-	public ClassPage(WebDriver driver) {
+	public ClassPage2(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

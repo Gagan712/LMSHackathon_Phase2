@@ -9,7 +9,7 @@ import org.testng.AssertJUnit;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.ClassPage;
+import pages.ClassPage2;
 
 public class ClassPart2_SD
 
@@ -17,7 +17,7 @@ public class ClassPart2_SD
 
 	public WebDriver driver;
 
-	ClassPage class2 = new ClassPage(driver);
+	ClassPage2 class2 = new ClassPage2(driver);
 
 	@Given("Admin is on ManageClass page after clicking class button")
 	public void admin_is_on_manage_class_page_after_clicking_class_button() {

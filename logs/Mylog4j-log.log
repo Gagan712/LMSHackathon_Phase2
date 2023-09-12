@@ -659,3 +659,91 @@
 [INFO ]2023-09-12 15:41:52.004 [main]LoggerLoad-Class page
 [INFO ]2023-09-12 15:41:52.016 [main]LoggerLoad-Class page
 [INFO ]2023-09-12 15:41:52.019 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-12 15:49:15.181 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-12 15:49:15.192 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-12 15:49:18.366 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-12 15:49:18.659 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.709 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.737 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.767 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.796 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.821 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.840 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.861 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.880 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.900 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.916 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.931 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.946 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.963 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:18.982 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.000 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.018 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.032 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.050 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.064 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.078 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:49:19.082 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-12 15:50:56.667 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-12 15:50:56.678 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-12 15:50:59.701 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-12 15:50:59.966 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.017 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.045 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.071 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.107 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.148 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.292 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.305 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.705 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.723 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.738 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.758 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.779 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.795 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.812 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.842 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.871 [main]LoggerLoad-Click Edit button
+[INFO ]2023-09-12 15:51:00.888 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.905 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.922 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.934 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.948 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:00.994 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.015 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.033 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.052 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.070 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.087 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.104 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.123 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.137 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.150 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.166 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-12 15:51:01.178 [main]LoggerLoad-User lands on Login PAge
+[INFO ]2023-09-12 15:51:01.183 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-12 15:51:28.094 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-12 15:51:28.103 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-12 15:51:30.659 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-12 15:51:30.937 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:30.989 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.031 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.078 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.101 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.126 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.144 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.164 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.184 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.206 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.240 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.263 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.287 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.306 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.323 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.340 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.356 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.369 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.381 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.394 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.407 [main]LoggerLoad-Class page
+[INFO ]2023-09-12 15:51:31.411 [main]LoggerLoad-Closing Driver

@@ -1,1 +1,6 @@
 /target/
+target/
+Reports/
+test-output/
+logs/
+

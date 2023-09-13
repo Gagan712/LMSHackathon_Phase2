@@ -81,7 +81,7 @@ public class Excelreader {
 		      e.printStackTrace();
 		    }
 		      XSSFSheet sheet = excel.getSheet("Sheet1");
-		      for(int rownum=19; rownum<=25;rownum++) {
+		      for(int rownum=19; rownum<=40;rownum++) {
 		    	  Row selectedRow =sheet.getRow(rownum);
 		    	  DataFormatter dataformat = new DataFormatter();
 		    	  if(columnname.equals(dataformat.formatCellValue(selectedRow.getCell(0)))) {

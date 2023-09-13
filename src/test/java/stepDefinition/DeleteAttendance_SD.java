@@ -46,7 +46,9 @@ public class DeleteAttendance_SD {
 
 	@Given("Admin is in delete alert after clicking on delete button")
 	public void admin_is_in_delete_alert_after_clicking_on_delete_button() {
-		//dap.clickdeletrow();
+		  dap.homepage();
+		  dap.clickAttendance();
+		dap.clickdeletrow();
 	}
 
 	@When("Admin clicks the yes button")

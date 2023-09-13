@@ -307,70 +307,7 @@ public class UserPage {
 		Assert.assertTrue("Searched Result are not Found", SU.verifySearch(data, searchString));
 	}
 
-	// sorting
-	public void clickOnSortBtn_Name() {
-		LoggerLoad.info("Admin/User/Staff Clicks on Program Name Sorting Arrow");
-		sortBtn_ProName.click();
-	}
-
-	public void clickOnSortBtn_Desc() {
-		LoggerLoad.info("Admin/User/Staff Clicks on Program Description Sorting Arrow");
-		sortBtn_ProDesc.click();
-	}
-
-	public void clickOnSortBtn_Status() {
-		LoggerLoad.info("Admin/User/Staff Clicks Program Status Sorting Arrow");
-		sortBtn_ProStatus.click();
-	}
-
-//	// Ascending order
-//	public void verifyASCOrder_Name() {
-//		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
-//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
-//		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
-//	}
-//
-//	public void verifyASCOrder_Desc() {
-//		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
-//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
-//		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
-//
-//	}
-
-//	public void verifyASCOrder_Status() {
-//		LoggerLoad.info("Admin/User/Staff see the result displayed in Ascending order");
-//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
-//		Assert.assertTrue("Results are in not in Asceding Order", AsDs.verifyAscendingOrder(data));
-//
-//	}
-//
-//	// descending order
-//	public void verifyDESCOrder_Name() {
-//		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
-//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramName);
-//		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
-//	}
-
-//	public void verifyDESCOrder_Desc() {
-//		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
-//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramDesc);
-//		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
-//	}
-//
-//	public void verifyDESCOrder_Status() {
-//		LoggerLoad.info("Admin/User/Staff see the result displayed in Descending order");
-//		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathProgramStatus);
-//		Assert.assertTrue("Results are not in Desceding Order", AsDs.verifyDescendingOrder(data));
-//	}
-
-// total no of rows 
-
-	public void noOfRows(int rows_count) {
-		rows_count = programtablerow.size();
-		LoggerLoad.info("No of rows in Program Table" + rows_count);
-	}
-
-	// add a new User
+		// add a new User
 	public void clickNewUserbtn() {
 		LoggerLoad.info("Clicks on a new user button");
 			userbtn.click();
@@ -464,23 +401,6 @@ public class UserPage {
 	
 	
 	
-//	public void setProgramName(String Name) {
-//		LoggerLoad.info("Enter Program Name");
-//		programName.click();
-//		programName.clear();
-//		programName.sendKeys(Name);
-//	}
-//
-//	public void setProgramDescription(String Description) {
-//		LoggerLoad.info("Enter description for program ");
-//		programDescription.click();
-//		programDescription.clear();
-//		programDescription.sendKeys(Description);
-//	}
-//
-//	public void setstatusbutton() {
-//		radioActive.click();
-//	}
 
 	public void clicksaveButton() {
 		LoggerLoad.info("Click save button");
@@ -492,17 +412,7 @@ public class UserPage {
 		cancelbtn.click();
 	}
 
-	public void verifyWindowClose() {
-		LoggerLoad.info("Admin verify window closed after cancel button");
-		assertEquals(driver.getCurrentUrl(), "Manage Program page URL");
-	}
-
-	public void verifyProgramPage() {
-		LoggerLoad.info("Admin verify that admin is on Manage Program page");
-		assertEquals(driver.getCurrentUrl(), "Manage Program page URL");
-	}
-
-	public String verifyMsg() {
+		public String verifyMsg() {
 		WebElement errorMessage = new WebDriverWait(driver, Duration.ofSeconds(30))
 				.until(ExpectedConditions.visibilityOfElementLocated(errormsg));
 		//LoggerLoad.error(errorMessage.getText());
@@ -585,7 +495,7 @@ public class UserPage {
 		// nobtn.click();
 	}
 
-	public void isPrgmNameDeleted(String searchstring) throws Exception {
+	public void isUserNameDeleted(String searchstring) throws Exception {
 		LoggerLoad.info("Admin check if program name is deleted");
 		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
 		Assert.assertTrue("Search result not found", SU.verifySearch(data, searchstring));

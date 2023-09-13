@@ -1,678 +1,946 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="0" failed="21" skipped="0">
+<testng-results ignored="0" total="34" passed="0" failed="34" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-12T17:01:48 PDT" name="Default suite" finished-at="2023-09-12T17:01:53 PDT" duration-ms="5560">
+  <suite started-at="2023-09-13T12:39:30 PDT" name="Default suite" finished-at="2023-09-13T12:39:36 PDT" duration-ms="5984">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-12T17:01:48 PDT" name="Default test" finished-at="2023-09-12T17:01:53 PDT" duration-ms="5560">
+    <test started-at="2023-09-13T12:39:30 PDT" name="Default test" finished-at="2023-09-13T12:39:36 PDT" duration-ms="5984">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:48 PDT" name="setUpClass" finished-at="2023-09-12T17:01:52 PDT" duration-ms="4159" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:30 PDT" name="setUpClass" finished-at="2023-09-13T12:39:34 PDT" duration-ms="4312" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1dd76982]]>
+                <![CDATA[org.testng.TestRunner@74619273]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="407" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:34 PDT" duration-ms="374" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sort function in data table for descending order"]]>
+                <![CDATA["Validate landing in User page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:7)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:9)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="31" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:34 PDT" duration-ms="28" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sort function in data table for ascending order"]]>
+                <![CDATA["Validate header in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:12)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:14)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="28" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:34 PDT" duration-ms="31" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sheet one is displayed on default in data table"]]>
+                <![CDATA["Validate pagination in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:17)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:19)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="24" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:34 PDT" duration-ms="40" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sheet one is displayed on default in data table"]]>
+                <![CDATA["Validate data table headers in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:21)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="24" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:34 PDT" duration-ms="26" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sheet one is displayed on default in data table"]]>
+                <![CDATA["Validate data table headers in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:25)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="21" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="24" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sheet one is displayed on default in data table"]]>
+                <![CDATA["Validate data table headers in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:29)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="22" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify sheet one is displayed on default in data table"]]>
+                <![CDATA["Validate data table headers in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:33)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="21" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="18" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify admin is able to navigate from manage class to student page"]]>
+                <![CDATA["Validate data table headers in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:38)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="37" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="25" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify admin is able to navigate from manage class to program page"]]>
+                <![CDATA["Validate data table headers in the User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:43)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="21" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify admin is able to navigate from manage class to program page"]]>
+                <![CDATA["Validate Delete button in User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:48)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:38)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="19" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="19" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify admin is able to navigate from manage class to program page"]]>
+                <![CDATA["Validate "+ A New user" button in User Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:53)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:43)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="20" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify admin is able to navigate from manage class to assignment page"]]>
+                <![CDATA["Validate "+ Assign staff"  button in User page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:58)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:48)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="18" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify admin is able to navigate from manage class to attendance page"]]>
+                <![CDATA["Validate search box in User page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:63)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:53)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="27" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="22" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify adminshould able to do logout function from manage class"]]>
+                <![CDATA["Validate data rows"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:68)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:58)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="18" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify delete multiple class  button is enabled"]]>
+                <![CDATA["Validate data rows"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:74)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:58)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="24" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="28" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["verify tick mark is visible after clicking on check box"]]>
+                <![CDATA["Validate data rows"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:79)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:58)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="15" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="19" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["verify admin able to click multiple check box"]]>
+                <![CDATA["Validate pop up for adding user"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:84)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login_and_user_admin_clicks_user_from_navigation_bar(User_SD.java:48)
+at ✽.User Admin is on "dashboard" page after Login And User Admin clicks User from navigation bar(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:69)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify accept alert in delete multiple class function by selecting single checkbox"]]>
+                <![CDATA["Check if Middle name, linkedIn url, email, user comments.under graduate,post graduate,time zone are optional"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:89)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="20" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="20" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify reject alert in delete multiple class function by selecting single checkbox"]]>
+                <![CDATA["Check with all possible scenarios of add User"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:95)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:84)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="18" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify accept alert in delete multiple class function by selecting multiple checkbox"]]>
+                <![CDATA["Check with all possible scenarios of add User"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:101)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:84)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="19" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify reject alert in delete multiple class function by selecting multiple checkbox"]]>
+                <![CDATA["Check with all possible scenarios of add User"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify sort function in manage class page"]]>
+                <![CDATA["User page validation"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
-at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
-at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
-at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:107)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:84)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="tearDownClass" finished-at="2023-09-12T17:01:53 PDT" duration-ms="505" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="18" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check with all possible scenarios of add User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:84)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="16" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate row level edit icon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:104)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate edit User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="14" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate edit User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="16" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate edit User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate edit User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="18" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate edit User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:112)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="16" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate row level delete icon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:133)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="16" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate accept alert"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:140)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="13" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate reject alert"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:147)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete multiple user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:154)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="13" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check for single row delete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.firstCheckbox" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.firstCheckbox" is null
+at pages.UserPage.selectFirstCheckbox(UserPage.java:609)
+at stepDefinition.User_SD.user_admin_one_of_the_checkbox_row_is_selected(User_SD.java:255)
+at ✽.Admin User One of the checkbox row is selected(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:160)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-13T12:39:35 PDT" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check for multi row delete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because "this.driver" is null
+at stepDefinition.User_SD.user_admin_is_on_page_after_login(User_SD.java:34)
+at ✽.User Admin is on "dashboard" page after Login(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/UserPage.feature:165)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-13T12:39:35 PDT" name="tearDownClass" finished-at="2023-09-13T12:39:36 PDT" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -847,3 +847,207 @@
 [INFO ]2023-09-12 17:01:53.093 [main]LoggerLoad-Class page
 [INFO ]2023-09-12 17:01:53.111 [main]LoggerLoad-Class page
 [INFO ]2023-09-12 17:01:53.121 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 10:34:25.143 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 10:34:25.160 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 10:34:30.899 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 10:34:32.654 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 10:48:05.386 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 10:48:05.399 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 10:48:08.607 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 10:48:09.979 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 10:50:19.924 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 10:50:19.936 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 10:50:23.020 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 10:50:24.648 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 10:59:18.529 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 10:59:18.539 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 10:59:21.704 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 10:59:22.510 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:05:17.539 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:05:17.551 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:05:20.561 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:05:22.001 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:18:21.444 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:18:21.460 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:18:25.183 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:18:25.924 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:22:39.064 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:22:39.074 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:22:42.179 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:22:43.790 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:29:42.429 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:29:42.459 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:29:45.871 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:29:46.647 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:31:43.679 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:31:43.689 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:31:46.649 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:31:47.435 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:39:48.488 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:39:48.498 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:39:54.146 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:39:54.770 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:46:11.711 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:46:11.725 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:46:14.934 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:46:17.128 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 11:46:17.154 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 11:47:41.400 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 11:47:41.410 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 11:47:43.915 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 11:47:45.196 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:19:51.705 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:19:51.714 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:19:54.266 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:19:54.625 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.744 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.802 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.830 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.858 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.890 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.918 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.945 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.967 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:54.987 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.014 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.033 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.055 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.074 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.094 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.121 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.152 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.172 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.191 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.212 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.230 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:19:55.238 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:21:30.870 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:21:30.881 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:21:33.333 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:21:33.666 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:33.784 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:33.856 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:33.896 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:33.931 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:33.959 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:33.984 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.010 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.036 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.057 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.079 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.106 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.132 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.152 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.173 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.197 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.224 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.246 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.269 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.292 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.315 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:21:34.327 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:22:26.973 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:22:26.982 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:22:28.957 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:22:30.279 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 12:22:30.301 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:23:15.468 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:23:15.475 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:23:17.383 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:23:17.712 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:17.842 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:17.910 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:17.947 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:17.979 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.017 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.046 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.077 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.102 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.131 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.150 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.173 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.193 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.215 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.234 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.258 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.284 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.305 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.325 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.345 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.364 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:23:18.376 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:24:35.367 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:24:35.374 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:24:37.502 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:24:38.058 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 12:24:38.070 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:27:14.344 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:27:14.351 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:27:16.548 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:27:17.057 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 12:27:17.070 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:28:40.995 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:28:41.000 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:28:42.945 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:28:43.450 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 12:28:43.462 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:29:20.897 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:29:20.901 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:29:22.795 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:29:22.964 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.001 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.084 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.108 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.126 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.153 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.165 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.178 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.190 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.200 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.211 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.221 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.232 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.243 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.252 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.265 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.275 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.286 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.296 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.306 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.316 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:29:23.318 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:33:19.379 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:33:19.387 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:33:21.984 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:33:22.159 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.190 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.207 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.223 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.235 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.251 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.261 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.271 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.281 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.290 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.300 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.312 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.323 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.333 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.342 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.358 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.368 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.377 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.388 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.398 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.407 [main]LoggerLoad-Class page
+[INFO ]2023-09-13 12:33:22.410 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:37:56.873 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:37:56.884 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:37:59.299 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:38:00.656 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 12:38:00.681 [main]LoggerLoad-Closing Driver
+[INFO ]2023-09-13 12:39:31.989 [main]LoggerLoad-Loading Config file
+[INFO ]2023-09-13 12:39:31.997 [main]LoggerLoad-Get Browser Type from Properties
+[INFO ]2023-09-13 12:39:34.415 [main]LoggerLoad-Intializingchromedriver
+[INFO ]2023-09-13 12:39:35.528 [main]LoggerLoad-Admin verify that first check boxes is selected
+[INFO ]2023-09-13 12:39:35.550 [main]LoggerLoad-Closing Driver

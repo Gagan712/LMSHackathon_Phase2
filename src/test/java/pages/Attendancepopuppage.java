@@ -51,6 +51,10 @@ public class Attendancepopuppage {
 		 @FindBy(xpath = "//*[@id='table']/thead/tr[2]") WebElement classnameattendancedd;
 		 @FindBy(xpath = "//*[@id='table']/thead/tr[3]") WebElement studentname;
 		 @FindBy(xpath = "//*[@id='table']/thead/tr[4]") WebElement attendance;
+		 @FindBy(xpath = "//*[@id='table']/thead/tr[4]/td[1]") WebElement attendanceddpresent;
+		 @FindBy(xpath = "//*[@id='table']/thead/tr[4]/td[2]") WebElement attendanceddabsent;
+		 @FindBy(xpath = "//*[@id='table']/thead/tr[4]/td[3]") WebElement attendanceddlate;
+		 @FindBy(xpath = "//*[@id='table']/thead/tr[4]/td[4]") WebElement attendanceddexcused;
 		 @FindBy(xpath = "//*[@id='table']/thead/tr[5]") WebElement attendancedate;
 		 @FindBy(xpath = "//*[@id='table']/thead[1]/tr[1]/a")WebElement textboxprogname;
 		 @FindBy(xpath = "//*[@id='table']/thead[1]/tr[2]")WebElement textboxclassname;
@@ -99,6 +103,26 @@ public class Attendancepopuppage {
 			}
 			 
 		 }
+		 public boolean checkattendanceddspelling() {
+			 int count= driver.findElements(By.xpath("//*[@id='table']/thead/tr[4]/td")).size();
+			boolean e=false;
+			 for(int i=1; i<=count; i++) {
+				 driver.findElement(By.xpath("//*[@id='table']/thead/tr[4]/td["+i+"]")).isDisplayed();
+				 if( driver.findElement(By.xpath("//*[@id='table']/thead/tr[4]/td["+i+"]")).isDisplayed()) {
+					 return true;
+				 } 
+			 }
+			return e;
+			
+		 }
+		 public List<String> checkattendancedd() {
+			 int count= driver.findElements(By.xpath("//*[@id='table']/thead/tr[4]/td")).size();
+			 List<String> dropdownattendance=new ArrayList<String>();
+			 for(int i=1; i<=count; i++) {
+				 dropdownattendance.add(driver.findElement(By.xpath("//*[@id='table']/thead/tr[4]/td["+i+"]")).getText()); 
+			 }
+			return dropdownattendance;
+		 }
 		 
 		 public String textboxprogname() {
 			String txt= textboxprogname.getText();
@@ -116,7 +140,14 @@ public class Attendancepopuppage {
 				String txt= textboxattendance.getText();
 				return txt;
 			 }
-		 
+		 public String textinprognamedd() {
+			 String txt= programnamedd.getText();
+			 return txt;
+		 }
+		 public String textinclassnamedd() {
+			 String txt= classnameattendancedd.getText();
+			 return txt;
+		 }
 		 public String getcoloroftext() {
 			String colorofprogname= textboxprogname.getCssValue("color");
 			return colorofprogname;

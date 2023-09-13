@@ -152,8 +152,9 @@ Excelreader read;
 
 	@Then("Program Name in the drop down should match with  program name in  manage program page table")
 	public void program_name_in_the_drop_down_should_match_with_program_name_in_manage_program_page_table() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	 String txtindropdown= atp.textinprognamedd();
+	 String txtintable=atp.textboxprogname();
+	 Assert.assertEquals(txtindropdown, txtintable);
 	}
 
 	@When("Admin clicks class name dropdown")
@@ -163,8 +164,9 @@ Excelreader read;
 
 	@Then("Class Name in the drop down should match with  class name in  manage class page table")
 	public void class_name_in_the_drop_down_should_match_with_class_name_in_manage_class_page_table() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		 String txtindropdown= atp.textinclassnamedd();
+		 String txtintable=atp.textboxclassname();
+		 Assert.assertEquals(txtindropdown, txtintable);
 	}
 
 	@When("Admin clicks attendance dropdown")
@@ -174,14 +176,17 @@ Excelreader read;
 
 	@Then("Attendance field should have keywords such as - present, absent, late, excused")
 	public void attendance_field_should_have_keywords_such_as_present_absent_late_excused() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		boolean rstl = atp.checkattendanceddspelling();
+		Assert.assertEquals(rstl, true);
+	
 	}
 
 	@Then("Admin should see correct spellings in dropdown text")
 	public void admin_should_see_correct_spellings_in_dropdown_text() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		read=new Excelreader("13", "Dditems");
+		 List<String> dd= atp.checkattendancedd();
+		 List<Object> expecteddd = read.getsetofdata();
+		 CollectionUtils.isEqualCollection(dd, expecteddd);
 	}
 
 	@When("Admin clicks the date from date picker")

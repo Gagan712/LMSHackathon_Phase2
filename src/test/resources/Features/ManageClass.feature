@@ -1,113 +1,89 @@
-Feature: Manage Class 
+Feature: Manage Class Page Verification
 Background: 
-Given Admin is in  Edit class detail popup window
+Given Admin is on dashboard page after login in class
 
+Scenario: Verify Admin landing in class page
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see URL with "Manage Class" in class
 
-  Scenario Outline: Validate admin able to update class with valid data in mandatory fields
-    When Admin enters all mandatory "<field>" values with valid "<data>" and clicks the save button ( Batch ID , No of Classes, Class Date, Staff Id)
-    Then Admin should see particular class details is updated in the data table
-   Examples: 
-   |testid|Sheetname|
-   |1|Sheet1|
-   |4|Sheet1|
-   |10|Sheet1|
-   |8|Sheet1|
-   
+Scenario: Verify Admin capture response time to navigate to manage class page
+When Admin clicks "Class" button on the navigation bar in class
+Then Get the response time for navigation from dashboard page to manage class page in class
     
-  Scenario Outline: Validate admin able to  update class with invalid data in mandatory fields
-    When Admin enters all mandatory "<field>" values with "<invalid data>" and clicks the save button ( Batch ID , No of Classes, Class Date, Staff Id, )
-    Then Error message should appear in the alert
-     Examples:
-    |testid|Sheetname|
-   |3|Sheet1|
-   |5|Sheet1|
-   |11|Sheet1|
-   |9|Sheet1|
-    
-    Scenario Outline: Validate admin able to  update class with valid data  in all fields
-    When Admin enters values in all fields with the valid "<data>" and clicks of save button (Batch ID , No of Classes, Class Date, Class Topic, Staff Id, Class description, Comments, Notes, Recordings)
-    Then Admin should see particular class details is updated in the data table
-      Examples:
-   |testid|Sheetname|
-   |1|Sheet1|
-   |4|Sheet1|
-   |10|Sheet1|
-   |6|Sheet1|
-   |8|Sheet1|
-   |14|Sheet1|
-   |15|Sheet1|
-   |16|Sheet1|
-   |17|Sheet1|
+Scenario: Verify for broken link
+When Admin gives the correct LMS portal URL in class
+Then Admin should recieve message as " HTTP response as >=400.The link is broken" in class
 
-  Scenario Outline: Validate admin able to  update  class with invalid data  in optional fields
-    When Admin enters with invalid data in the optional fields and clicks save button ( Batch ID , No of Classes, Class Date, Staff Id)
-    Then Error message should appear in the alert
-     Examples:
-   |testid|Sheetname|
-   |1|Sheet1|
-   |4|Sheet1|
-   |10|Sheet1|
-   |6|Sheet1|
-   |8|Sheet1|
-   |14|Sheet1|
-   |15|Sheet1|
-   |16|Sheet1|
-   |17|Sheet1|
-    
-   Scenario Outline: Validate admin able to update class missing Batch Id
-    When Admin enters  data missing value in Batch ID and clicks save button (No of Classes, Class Date, Staff Id)
-    Then Batch Id should be missing
- Examples:
-    |testid|Sheetname|
-    |4|Sheet1|
-    |10|Sheet1|
-   |8|Sheet1|
+Scenario: Verify Manage Class page header
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see header with "Manage Class" in class
 
-    Scenario Outline: Validate admin able to update  class missing No of Class
-    When Admin enters data missing value in the No of class and clicks save button (Batch ID ,  Class Date, Staff Id, )
-    Then No of classes is of missing
-    Examples:
-    |testid|Sheetname|
-    |1|Sheet1|
-    |10|Sheet1|
-   |8|Sheet1|
-    
-    Scenario Outline: Validate admin able to update class missing Class Date
-    When Admin enters data missing value in  the class date and clicks save button (Batch ID , No of Classes, Staff Id, )
-    Then class date is of missing
-      Examples:
-  |testid|Sheetname|
-    |1|Sheet1|
-    |4|Sheet1|
-   |8|Sheet1|
-    
-    Scenario Outline: Validate admin able to update class missing staff id
-    When Admin enters data missing value in the staff id and clicks save button (Batch ID , No of Classes, Class Date )
-    Then staff id is of missing
-      Examples:
-   |testid|Sheetname|
-    |1|Sheet1|
-    |4|Sheet1|
-    |10|Sheet1|
+Scenario Outline: Verify the text spelling in the Manage Class Page
+When Admin clicks "Class" button on the navigation bar in class 
+Then Admin should see all the "<field>" and the correct spelling in class 
 
-    Scenario Outline: Validate  admin able to update class passing past date
-    When Admin enters the passed date in the class date field and clicks save button ( Batch ID , No of Classes, Class Date, Staff Id)
-    Then class cannot be updated for passed date
-      Examples:
-      |testid|Sheetname|
-    |1|Sheet1|
-    |4|Sheet1|
-    |11|Sheet1|
-    |8|Sheet1|
+    Examples: 
+      | field |     
+      | BatchId|
+      | Class No|
+      | Class Date|
+      | Class Topic|
+      | Staff Id|
+      | Description|
+      | Comments|
+      | Notes|
+      | Recording|
+       | Edit|
+        | Delete|
 
-    Scenario: Validate cancel button function in Edit class details popup window
-    When Admin clicks the Cancel button without entering values in the fields
-    Then Admin should land on the Manage Class page
-  
+Scenario: Verify delete icon below the header
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see disabled delete icon below the "Manage Class" in class
+
+Scenario: Verify search bar on class page
+ When Admin clicks "Class" button on the navigation bar in class
+ Then Admin should see search bar on the class page in class
+
+Scenario: Verify add new class button on class page 
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see +Add New Class button on the class page in class
+
     
-      Scenario: Validate cancel button function in Edit class details popup window with values in field
-    When Admin clicks the Cancel button entering values in the fields
-    Then Admin should land on Manage Class Page and validate particular class details are not changed  in the data table
+Scenario: Verify Edit icon in data table 
+When Admin clicks "Class" button on the navigation bar in class
+Then Edit Icon in each row of data table only  when entries are available in class
     
+Scenario: Verify Edit icon when no data in table 
+When Admin clicks "Class" button on the navigation bar in class
+Then Edit Icon will not be present in data table in class
     
+Scenario: Verify Delete icon in data table 
+When Admin clicks "Class" button on the navigation bar in class
+Then Delete Icon in each row of data table only when entries are available in class
+    
+Scenario: Verify Delete icon when no data in table 
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin cant see delete Icon in data table in class
+    
+Scenario: Verify Sort icon in data table 
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see sort icon near the column headers except for Edit and Delete in class
+    
+Scenario: Verify check box in data table 
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see check box in the all rows  of data table in class 
+    
+Scenario: Validate number of entries displayed
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see the text as "Showing x to y of z entries" below the table above the footer in class
+    
+Scenario: Validate pagination control below data table
+When Admin clicks "Class" button on the navigation bar in class
+Then Admin should see the pagination controls under the data table in class
+    
+Scenario: Validate footer text
+ When Admin clicks "Class" button on the navigation bar in class
+ Then Admin should see the text with total number classes in the data table "In total there are number of classes" in class
+ 
+ 
     

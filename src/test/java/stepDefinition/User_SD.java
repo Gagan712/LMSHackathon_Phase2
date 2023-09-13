@@ -41,14 +41,14 @@ public class User_SD {
 	public void admin_should_see_the_in_the_url(String urldata) {
 		
 		String Url= driver.getCurrentUrl(); 
-		AssertJUnit.assertEquals(urldata,Url.contains("manageuser"));
+		Assert.assertEquals(urldata,Url.contains("manageuser"));
 	}
 	
 	
 	
 	@Then("Admin should see the {string} in the header")
 	public void admin_should_see_the_in_the_header(String headerdata) {
-		AssertJUnit.assertEquals(user.verifyHeaderText(),headerdata);
+		Assert.assertEquals(user.verifyHeaderText(),headerdata);
 		
 	}
 
@@ -72,7 +72,7 @@ public class User_SD {
 
 	@Then("Admin should be able to see the Delete icon button that is disabled")
 	public void admin_should_be_able_to_see_the_delete_icon_button_that_is_disabled() {
-		AssertJUnit.assertFalse("Delete Button is disabled", user.verifyEnableMainBtn());
+		AssertJUnit.assertFalse("Delete Button is not disabled", user.verifyEnableMainBtn());
 	
 	}
 
@@ -80,18 +80,20 @@ public class User_SD {
 	public void admin_should_be_able_to_see_the_button(String text) {
 		//String value=user.newUserOrNewassignText(text);
 		//Assert.assertEquals(value, text);
-		if(driver.getPageSource().contains(text))
-		{
-			System.out.println("Element is present");
-		}
-		else {
-			System.out.println("Element is not present");
-		}
+//		if(driver.getPageSource().contains(text))
+//		{
+//			System.out.println("Element is present");
+//		}
+//		else {
+//			System.out.println("Element is not present");
+//		}
+		
+		Assert.assertTrue(user.verifyButtonVisible(text));
 	}
 
 	@Then("Admin should be able to see the search text box")
 	public void admin_should_be_able_to_see_the_search_text_box() {
-		AssertJUnit.assertTrue(user.verifySearchtextbox());
+		Assert.assertTrue(user.verifySearchtextbox());
 	}
 
 	@Then("Admin should see each row in the data table should have a {string}")
@@ -115,8 +117,10 @@ public class User_SD {
 
 	@Given("Admin is on dashboard page after Login and Admin clicks User from navigation bar")
 	public void admin_is_on_dashboard_page_after_login_and_admin_clicks_user_from_navigation_bar() {
-       user.clickEditButton();
-       user.clickOnfirstDeleteButton();
+//       user.clickEditButton();
+//       user.clickOnfirstDeleteButton();
+       
+       user.clickuserlink();
 	
 	}
 
@@ -128,17 +132,18 @@ public class User_SD {
 
 	@Then("Admin should see new pop up with User details appears")
 	public void admin_should_see_new_pop_up_with_user_details_appears() {
-		
-		user.verifyNewUserWindow();
+		Assert.assertTrue(user.verifySwitchToWindow());
+		//user.verifyNewUserWindow();
 		
 	}
 	
 	//Add User
 	
 	@When("The pop up should include the fields First Name,Middle name, Last Name, Location phone, email,linkedin Url,Undergraduate,postgraduate,time zone and user comments as {string} box and User Role ,Role Status ,Visa Status as drop down {string}")
-	public void the_pop_up_should_include_the_fields_first_name_middle_name_last_name_location_phone_email_linkedin_url_undergraduate_postgraduate_time_zone_and_user_comments_as_box_and_user_role_role_status_visa_status_as_drop_down(String string, String string2) {
+	public void the_pop_up_should_include_the_fields_first_name_middle_name_last_name_location_phone_email_linkedin_url_undergraduate_postgraduate_time_zone_and_user_comments_as_box_and_user_role_role_status_visa_status_as_drop_down(String text, String dropdown) {
 
-	
+	user.verifytextboxtype(text);
+	user.verifydropdownype(dropdown);
 	
 	}
 
@@ -169,13 +174,13 @@ public class User_SD {
 	@Then("Admin should see the {string}")
 	public void admin_should_see_the(String msg) {
 		
-		AssertJUnit.assertEquals(user.verifyMsg(), msg);
+		Assert.assertEquals(user.verifyMsg(), msg);
 	}
 	
 	//Delete User
 	@When("A The delete icon on row level in data table is enabled")
 	public void a_the_delete_icon_on_row_level_in_data_table_is_enabled() {
-		AssertJUnit.assertTrue(user.verifyfirstDeletBtn());
+		Assert.assertTrue(user.verifyfirstDeletBtn());
 	}
 
 	@When("Admin clicks the delete icon")
@@ -229,7 +234,7 @@ public class User_SD {
 	@Then("The delete icon under the Manage User header should be disabled")
 	public void the_delete_icon_under_the_manage_user_header_should_be_disabled() {
 
-	AssertJUnit.assertFalse(user.verifyEnableMainBtn());
+	Assert.assertFalse(user.verifyEnableMainBtn(),"Delete is not diabled");
 	
 	}
 
@@ -248,7 +253,7 @@ public class User_SD {
 	@Then("The respective row in the data table is deleted")
 	public void the_respective_row_in_the_data_table_is_deleted() throws Exception {
 
-	user.verifyPrgmNameExist();
+	user.verifyUserNameExist();
 	}
 
 	@When("Two or more checkboxes row is selected")

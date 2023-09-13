@@ -59,6 +59,7 @@ public class UserPage {
 	WebElement userbtn;
 
 	
+	
 
 	// UserDetail Window
 	@FindBy(id = "programpopup")
@@ -104,6 +105,11 @@ public class UserPage {
 	@FindBy(id = "successMessage")
 	By successmsg;
 
+	
+	
+	
+	
+	
 	// Edit and Delete
 	@FindBy(id = "yes button")
 	WebElement yesbtn;
@@ -385,6 +391,19 @@ public class UserPage {
 	public void verifyNewUserWindow() {
 		LoggerLoad.info("Admin is on A New User Window");
 		driver.switchTo().activeElement();
+		
+	}
+	
+	public boolean verifySwitchToWindow() {
+		WebElement userDetailsWindow=driver.findElement(By.cssSelector("user details"));
+		if(userDetailsWindow.equals(driver.switchTo().activeElement()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	
@@ -658,7 +677,7 @@ public class UserPage {
 
 	}
 
-	public void verifyPrgmNameExist() throws Exception {
+	public void verifyUserNameExist() throws Exception {
 		LoggerLoad.info("Admin can see Program Names not deleted");
 		LoggerLoad.info("check if program name is deleted");
 		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
@@ -691,6 +710,10 @@ public class UserPage {
 		}
 	}
 
+
+	
+	
+	
 	public boolean verifyPagination() {
 		if(nextPgBtn.isEnabled()&&prevPgBtn.isEnabled()&&firstPgBtn.isEnabled()&&lastPgBtn.isEnabled())
 		{
@@ -703,5 +726,9 @@ public class UserPage {
 		}
 	}
 	
+	public boolean verifyButtonVisible(String text)	{
+		Boolean visible=driver.findElement(By.linkText(text)).isDisplayed();
+		return visible;
+	}
 
 }

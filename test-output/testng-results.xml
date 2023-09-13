@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="21" passed="0" failed="21" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-12T15:51:26 PDT" name="Default suite" finished-at="2023-09-12T15:51:31 PDT" duration-ms="5511">
+  <suite started-at="2023-09-12T17:01:48 PDT" name="Default suite" finished-at="2023-09-12T17:01:53 PDT" duration-ms="5560">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-12T15:51:26 PDT" name="Default test" finished-at="2023-09-12T15:51:31 PDT" duration-ms="5511">
+    <test started-at="2023-09-12T17:01:48 PDT" name="Default test" finished-at="2023-09-12T17:01:53 PDT" duration-ms="5560">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:26 PDT" name="setUpClass" finished-at="2023-09-12T15:51:30 PDT" duration-ms="4443" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:48 PDT" name="setUpClass" finished-at="2023-09-12T17:01:52 PDT" duration-ms="4159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@13ef7fa1]]>
+                <![CDATA[org.testng.TestRunner@1dd76982]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:30 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:30 PDT" duration-ms="222" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="407" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:7)
@@ -52,7 +52,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:30 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:30 PDT" duration-ms="38" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="31" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:12)
@@ -83,7 +83,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:30 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="37" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="28" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:17)
@@ -114,7 +114,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="43" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="24" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:21)
@@ -145,7 +145,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="24" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="24" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -166,7 +166,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:25)
@@ -176,7 +176,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="22" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:29)
@@ -207,7 +207,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="18" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="22" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -228,7 +228,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:33)
@@ -238,7 +238,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -259,7 +259,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:38)
@@ -269,7 +269,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="19" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="37" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -290,7 +290,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:43)
@@ -300,7 +300,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="22" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="21" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -321,7 +321,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:48)
@@ -331,7 +331,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="35" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="19" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -352,7 +352,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:53)
@@ -362,7 +362,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="20" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -383,7 +383,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:58)
@@ -393,7 +393,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="22" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -414,7 +414,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:63)
@@ -424,7 +424,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="20" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:52 PDT" duration-ms="27" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -445,7 +445,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:68)
@@ -455,7 +455,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="14" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -476,7 +476,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:74)
@@ -486,7 +486,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="17" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="24" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -507,7 +507,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:79)
@@ -517,7 +517,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="13" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="15" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -538,7 +538,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:84)
@@ -548,7 +548,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -569,7 +569,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:89)
@@ -579,7 +579,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="11" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="20" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -600,7 +600,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:95)
@@ -610,7 +610,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="18" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -631,7 +631,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:101)
@@ -641,7 +641,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T15:51:31 PDT" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-12T17:01:53 PDT" duration-ms="17" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -662,7 +662,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy59.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy60.click(Unknown Source)
 at pages.ClassPage2.clickclasslink(ClassPage2.java:149)
 at stepDefinition.ClassPart2_SD.admin_is_on_manage_class_page_after_clicking_class_button(ClassPart2_SD.java:25)
 at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users/cnudr/git/LMSHackathon_Phase2/src/test/resources/Features/ClassPart2.feature:107)
@@ -672,7 +672,7 @@ at ✽.Admin is on ManageClass page after clicking class button(file:///C:/Users
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T15:51:31 PDT" name="tearDownClass" finished-at="2023-09-12T15:51:31 PDT" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@5386659f]" started-at="2023-09-12T17:01:53 PDT" name="tearDownClass" finished-at="2023-09-12T17:01:53 PDT" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

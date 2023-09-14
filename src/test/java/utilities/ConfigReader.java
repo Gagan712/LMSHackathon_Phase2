@@ -48,6 +48,26 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("url not specified in the Config.properties file");
 	}
-
+public static String invalidUrl() {
+		String invalidurl = properties.getProperty("invaildURL");
+		if (invalidurl != null)
+			return invalidurl;
+		else
+			throw new RuntimeException("url not specified in the Config.properties file");
+	}
+	public static String getexcelfilepath() {
+		String excelfilelpath = properties.getProperty("excelFilePath");
+		if (excelfilelpath != null)
+			return excelfilelpath;
+		else
+			throw new RuntimeException("Excel file path not specified in the Configuration.properties file.");
+	}
+	public static String loginUrl() {
+		String loginurl = properties.getProperty("invaildURL");
+		if (loginurl != null)
+			return loginurl;
+		else
+			throw new RuntimeException("url not specified in the Config.properties file");
+	}
 
 }

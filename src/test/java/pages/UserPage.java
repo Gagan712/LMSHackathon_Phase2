@@ -62,8 +62,8 @@ public class UserPage {
 	
 
 	// UserDetail Window
-	@FindBy(id = "programpopup")
-	WebElement programpop;
+	@FindBy(id = "Userpopup")
+	WebElement Userpop;
 	@FindBy(id = "first name")
 	WebElement FirstName;
 	@FindBy(id = "Middle Name")
@@ -183,7 +183,7 @@ public class UserPage {
 
 	// no of rows
 	@FindBy(xpath = "//*[@id='table']/tbody/tr")
-	List<WebElement> programtablerow;
+	List<WebElement> usertablerow;
 	
 	
 	//Alert msg
@@ -273,7 +273,7 @@ public class UserPage {
 	}
 
 	public void verifyPage() {
-		LoggerLoad.info("Admin/User/Staff is on Manage Program page");
+		LoggerLoad.info("Admin/User/Staff is on Manage user page");
 		assertEquals(driver.getCurrentUrl(), "URL");
 	}
 
@@ -321,7 +321,7 @@ public class UserPage {
 	}
 
 	public void verifyPopUPWindow(String popuptext) {
-		String poptxt = programpop.getText();
+		String poptxt = Userpop.getText();
 		assertEquals(poptxt, popuptext);
 	}
 
@@ -496,7 +496,7 @@ public class UserPage {
 	}
 
 	public void isUserNameDeleted(String searchstring) throws Exception {
-		LoggerLoad.info("Admin check if program name is deleted");
+		LoggerLoad.info("Admin check if user name is deleted");
 		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
 		Assert.assertTrue("Search result not found", SU.verifySearch(data, searchstring));
 
@@ -588,8 +588,8 @@ public class UserPage {
 	}
 
 	public void verifyUserNameExist() throws Exception {
-		LoggerLoad.info("Admin can see Program Names not deleted");
-		LoggerLoad.info("check if program name is deleted");
+		LoggerLoad.info("Admin can see user Names not deleted");
+		LoggerLoad.info("check if user name is deleted");
 		ArrayList<String> data = Pgu.getAllPageData(tableContainer, cellXPathUserName);
 		Assert.assertTrue("Search result not found for" + userName1.getText(),
 				SU.verifySearch(data, userName1.getText()));

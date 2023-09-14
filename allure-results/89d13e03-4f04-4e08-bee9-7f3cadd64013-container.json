@@ -1,0 +1,1 @@
+{"uuid":"89d13e03-4f04-4e08-bee9-7f3cadd64013","name":"Scenario Outline: Validate admin able to  update class with invalid data in mandatory fields in edit class","children":["fc84c144-9cbd-4b82-a34c-ebe6d117a2a4"],"befores":[],"afters":[],"start":1694672386929,"stop":1694672387137}

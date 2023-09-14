@@ -1,32 +1,37 @@
 package runner;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+//import io.cucumber.junit.*;
 
-public class Runner {
-	@CucumberOptions(
-			plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-			glue =  "stepDefinition",
-			features = {"src/test/resources/Features/AddNewClass.feature", 
-			"src/test/resources/Features//Attendancedetailspopup.feature",
-			"src/test/resources/Features//Classdetailpopupwindow.feature",
-			"src/test/resources/Features//DeleteAttendance.feature",
-			"src/test/resources/Features//DeleteClass.feature",
-			"src/test/resources/Features//EditClass.feature",
-			"src/test/resources/Features//ManageClass.feature",
-			"src/test/resources/Features//Navigationmanageattendance.feature",
-			"src/test/resources/Features//Paginationinmanageattendance.feature"})
+//import org.junit.runner.RunWith;
+
+//import io.cucumber.junit.CucumberOptions;
+//import io.cucumber.junit.Cucumber;
+//import org.junit.runner.RunWith;
+import org.testng.annotations.DataProvider;
+
+//@RunWith(Cucumber.class) //Junit execution
+
+@CucumberOptions(
+		plugin = { "pretty", "html:target/lms.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
+		
+		monochrome=false,  //console output
+		//tags = "@CrossBrowserFirefox", //tags from feature file
+		features = {"src/test/resources/Features"}, //location of feature files
+		glue= {"stepDefinition","hooks"}) //location of step definition files
+
+public class Runner
+extends AbstractTestNGCucumberTests{
+
+@Override
+@DataProvider(parallel = false)
+public Object[][] scenarios() {
 			
-	@Test
-public class AllureReport extends AbstractTestNGCucumberTests {
-      @Override
-	@DataProvider(parallel = false)
-		public Object[][] scenarios(){
-	return super.scenarios();
-	}
-	}
-
+return super.scenarios();
+    
 }
+}
+
+

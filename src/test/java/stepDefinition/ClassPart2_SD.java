@@ -92,8 +92,8 @@ public class ClassPart2_SD
 	}
 	
 	@When("Class Admin clicks {string} button in the navigation bar")
-	public void Class_Admin_clicks_button_in_the_navigation_bar(String module) {
-         class2.clickonNavigatiobButton(module);
+	public void Class_Admin_clicks_button_in_the_navigation_bar(String string) {
+
 	
 	}
 

@@ -1,8 +1,14 @@
 package stepDefinition;
 
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.MainPage;
+import utilities.LoggerLoad;
 
 public class MainPage_SD {
 	
@@ -15,17 +21,22 @@ public class MainPage_SD {
 
 	@Then("Admin should land on the home page")
 	public void admin_should_land_on_the_home_page() {
-	    
+		main.verifyMainPage();
+	    LoggerLoad.info("Admin is on home Page");
 	}
 
 	@When("Admin gives the invalid LMS portal URL")
 	public void admin_gives_the_invalid_lms_portal_url() {
-	   
+		main.invalidurl();
+		LoggerLoad.info("Admin enter the invalid url");
 	}
 
 	@Then("Admin should recieve message as {string}")
-	public void admin_should_recieve_message_as(String string) {
+	public void admin_should_recieve_message_as(String invalidurlmsg) throws Exception, Exception {
 	   
+		String invalidMsg = main.invalidurlmessage();
+		assertEquals(invalidMsg,invalidurlmsg);
+		LoggerLoad.info("404 page not found");
 	}
 
 	@Then("Admin should see each L with message LEARNING")

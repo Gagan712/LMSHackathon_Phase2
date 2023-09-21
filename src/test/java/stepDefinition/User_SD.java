@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.MainPage;
 import pages.UserPage;
 
 
@@ -19,13 +20,13 @@ public class User_SD {
 	
 	public WebDriver driver;
 	UserPage user = new UserPage();
+	MainPage main = new MainPage();
 	
 	
 	@Given("Logged on the LMS portal as admin")
 	public void user_admin_logged_on_the_lms_portal_as_admin() {
 		
-		
-		
+	
 	}
 
 	@Given("User Admin is on {string} page after Login")
